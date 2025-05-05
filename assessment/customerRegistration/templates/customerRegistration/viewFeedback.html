@@ -1,0 +1,16 @@
+{% extends 'customerRegistration/base.html' %}
+
+{% load static %} 
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'customerRegistration/viewfeedback.css' %}">
+<div class="container">
+  {% for items in feedbacks %}
+  <div class="feedback-item">
+    <p class="name">{{items.name}}</p>
+    <p>{{items.feedback}}</p>
+    <p class="email">{{items.email}}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

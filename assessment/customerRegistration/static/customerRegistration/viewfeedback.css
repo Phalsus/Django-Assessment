@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+.feedback-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.feedback-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.feedback-item:last-child {
+    border-bottom: none;
+}
+.name {
+    font-weight: bold;
+}
+.rating {
+    color: goldenrod;
+}

@@ -1,0 +1,43 @@
+{% extends 'customerRegistration/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'customerRegistration/homepage.css' %}" />
+
+<div
+  id="herosection"
+  className=" h-screen bg-no-repeat bg-cover bg-top"
+  style="background-image: url('{% static 'customerRegistration/Herosection.png' %}')"
+>
+  <div
+    id="mainContainer"
+    className=" flex max-w-7xl mx-auto lg:justify-start h-full items-center bg-pink-400 lg:bg-transparent bg-opacity-20"
+  >
+    <div
+      id="subContainer"
+      className="lg:basis-1/2 flex flex-col justify-around gap-4 mx-4 opacity-100"
+    >
+      <h1
+        id="mainText"
+        className="text-5xl lg:text-7xl text-black font-bold font-sairaCondensed text-left "
+      >
+        Elevate Your Game With <br>
+        <span id="specialText" className="text-[#9E7718]">Kicks City</span>
+      </h1>
+      <h1 id="subText" className="text-3xl lg:text-4xl font-inriaSans">
+        Discover the latest and greatest basketball sneakers to take your
+        performance to new heights.
+      </h1>
+      <a href="{% url 'customerRegistration:feedback'%}">
+        <button
+          className="text-3xl lg:text-4xl font-inriaSans bg-black text-white  py-3 rounded-3xl px-6"
+        >
+          Register Today
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

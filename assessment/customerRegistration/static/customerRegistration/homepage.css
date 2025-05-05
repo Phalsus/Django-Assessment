@@ -1,0 +1,63 @@
+#herosection {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#mainContainer {
+    display: flex;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+    background: transparent;
+
+
+}
+
+#subContainer{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    opacity: 1;
+    
+}
+
+#mainText{
+    font-size: 4.5rem;
+    line-height: 1;
+    color: black;
+    font-weight: 700;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+#specialText{
+
+    color: #9e7718;
+}
+
+#subText{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-family: sans-serif;
+}
+
+button {
+    font-size: 2.25rem /* 30px */;
+    line-height: 2.5rem /* 36px */;
+    font-family: sans-serif;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 1.5rem;
+}
